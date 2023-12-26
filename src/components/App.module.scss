@@ -1,0 +1,40 @@
+.button {
+  background-color: red;
+}
+
+.container {
+  width: 1000px;
+  height: 400px;
+  overflow: auto;
+  margin: 50px;
+  padding-bottom: 50px;
+}
+
+.table {
+  border-spacing: 0;
+
+  th, td {
+    border: 1px solid #bbb;
+    padding: 10px;
+  }
+
+  th {
+    min-width: 150px;
+    position: sticky;
+    top: 0;
+    background-color: #727272;
+    color: #e0e0e0;
+  }
+
+  th:last-child,
+  td:last-child {
+    position: sticky;
+    right: 0;
+  }
+}
+
+.table>:nth-child(3){
+  td:last-child {
+    background-color: gray;
+  }
+}
